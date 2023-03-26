@@ -109,7 +109,7 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.social-icon {
+.social-link {
     display: flex;
     width: 40px;
     height: 40px;
@@ -253,34 +253,23 @@ ul {
     display: flex;
     gap: 24px;
 }
-/* Icon Settings */
-.feature-item::before {
-    content: "";
-    display: block;
+.feature-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 264px;
     height: 112px;
-    background-color: var(--background-studioWord-text);
-    border-radius: 4px;
+
     margin-bottom: 8px;
+
+    border-radius: 4px;
+
+    background-color: var(--background-studioWord-text);
 }
-.icon-strategy::before {
-    /* background-image: url(../images/svg/icon-strategy.svg); */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-punctuality::before {
-    /* background-image: url(../images/svg/icon-punctuality.svg); */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-diligence::before {
-    /* background-image: url(../images/svg/icon-diligence.svg); */
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-technologies::before {
-    /* background-image: url(../images/svg/icon-technologies.svg); */
-    background-repeat: no-repeat;
-    background-position: center;
+.feature-icon {
+    width: 64px;
+    height: 64px;
 }
 /* ///////////////////////// */
 /* What Are We Doing Section */
@@ -329,12 +318,17 @@ ul {
     margin-top: 8px;
     gap: 24px;
 }
-.social-team-item {
+.team-link {
     background-color: var(--span-activeButton);
 }
-.social-team-item:hover,
-.social-team-item:focus {
+.team-link:hover,
+.team-link:focus {
     background-color: var(--activeButtonPortfolio);
+}
+.team-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--background-studioWord-text);
 }
 /* ///////////////// */
 /* Customers Section */
@@ -365,7 +359,18 @@ ul {
 .customer-link:focus {
     border: 1px solid var(--activeButtonPortfolio);
 }
+.customer-icon {
+    width: 168px;
+    height: 88px;
 
+    padding: 16px 32px;
+
+    fill: var(--borderCustomersIcon);
+}
+.customer-icon:hover,
+.customer-icon:focus {
+    fill: var(--activeButtonPortfolio);
+}
 /* /////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////// Portfolio Tab //////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////////////////////// */
@@ -468,12 +473,17 @@ ul {
 
     gap: 16px;
 }
-.social-item {
-    background-color: var(--h1-textButton-background);
-    opacity: 0.1;
+.footer-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--background-studioWord-text);
 }
-.social-item:hover,
-.social-item:focus {
+.footer-link {
+    background-color: rgba(255,255,255,0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
     background-color: var(--footerActiveBackgroungColor);
     opacity: 1;
 }
